@@ -1,4 +1,8 @@
+import 'package:ecommerceapp/constant/color.dart';
 import 'package:flutter/material.dart';
+
+import '../../common/widgets/custom_elevated_button.dart';
+import '../../common/widgets/custom_outlined_button.dart';
 
 class EntroPage extends StatelessWidget {
   const EntroPage({super.key});
@@ -29,7 +33,7 @@ class EntroPage extends StatelessWidget {
               height: 425,
               width: double.infinity,
               decoration: BoxDecoration(
-                  color: Color(0xffFF0340),
+                  color: Color(NColor.primaryColor),
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(70),
                     topRight: Radius.circular(70),
@@ -45,37 +49,25 @@ class EntroPage extends StatelessWidget {
                     "favourite electronics!",
                     style: TextStyle(color: Colors.white, fontSize: 32),
                   ),
-                  SizedBox(height: 20,),
                   SizedBox(
-                    width: 200,
-                    height: 50,
-                    child: OutlinedButton(
-                      style: OutlinedButton.styleFrom(
-                        side: BorderSide(color: Colors.white)
-                      ),
-                      onPressed: () {},
-                      child: Text(
-                        "Log in",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 22,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ),
+                    height: 20,
                   ),
-                  SizedBox(height: 20,),
                   SizedBox(
                     width: 200,
                     height: 50,
-                    child: ElevatedButton(
+                    child: CustomOutlinedButn(onPressed: () {},),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  SizedBox(
+                    width: 200,
+                    height: 50,
+                    child: CustomElevatedButn(
+                      bgColor: NColor.whiteColor,
+                      buttonName: 'Sign up',
                       onPressed: () {},
-                      child: Text(
-                        "Sign up",
-                        style: TextStyle(
-                            color: Colors.red,
-                            fontSize: 22,
-                            fontWeight: FontWeight.bold),
-                      ),
+                      btnNameColor: NColor.primaryColor,
                     ),
                   )
                 ],
