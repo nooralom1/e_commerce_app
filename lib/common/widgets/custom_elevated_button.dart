@@ -4,9 +4,10 @@ class CustomElevatedButn extends StatelessWidget {
   final int bgColor;
   final int btnNameColor;
   final String buttonName;
+  final double buttonNameSize;
   final VoidCallback onPressed;
   const CustomElevatedButn({
-    super.key, required this.bgColor, required this.buttonName, required this.onPressed, required this.btnNameColor,
+    super.key, required this.bgColor, required this.buttonName, required this.onPressed, required this.btnNameColor, required this.buttonNameSize,
   });
 
   @override
@@ -20,8 +21,7 @@ class CustomElevatedButn extends StatelessWidget {
         buttonName,
         style: TextStyle(
             color: Color(btnNameColor),
-            fontSize: 22,
-            fontWeight: FontWeight.bold),
+            fontSize: buttonNameSize,),
       ),
     );
   }

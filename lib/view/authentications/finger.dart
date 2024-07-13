@@ -1,19 +1,16 @@
-import 'package:ecommerceapp/constant/color.dart';
-import 'package:ecommerceapp/view/authentications/login.dart';
-import 'package:ecommerceapp/view/authentications/signup_page.dart';
+import 'package:ecommerceapp/view/home_page.dart';
 import 'package:flutter/material.dart';
 
-import '../../common/widgets/custom_elevated_button.dart';
-import '../../common/widgets/custom_outlined_button.dart';
+import '../../constant/color.dart';
 
-class EntroPage extends StatefulWidget {
-  const EntroPage({super.key});
+class FingerPage extends StatefulWidget {
+  const FingerPage({super.key});
 
   @override
-  State<EntroPage> createState() => _EntroPageState();
+  State<FingerPage> createState() => _FingerPageState();
 }
 
-class _EntroPageState extends State<EntroPage> {
+class _FingerPageState extends State<FingerPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,41 +46,35 @@ class _EntroPageState extends State<EntroPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    "A Blend of all your",
+                    "Finger Print",
                     style: TextStyle(color: Colors.white, fontSize: 32),
                   ),
                   const Text(
-                    "favourite electronics!",
+                    "access!",
                     style: TextStyle(color: Colors.white, fontSize: 32),
                   ),
                   const SizedBox(
                     height: 20,
                   ),
-                  SizedBox(
-                    width: 200,
-                    height: 50,
-                    child: CustomOutlinedButn(
-                      onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginPage()));
-                      },
-                    ),
+                  InkWell(
+                    onTap: (){
+                      setState(() {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomePage()));
+                      });
+                    },
+                    child: SizedBox(
+                      height: 100,
+                        width: 100,
+                        child: Image.asset("asset/images/whitefinger.png")),
                   ),
                   const SizedBox(
                     height: 20,
                   ),
-                  SizedBox(
-                    width: 200,
-                    height: 50,
-                    child: CustomElevatedButn(
-                      bgColor: NColor.whiteColor,
-                      buttonName: 'Sign up',
-                      onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const SignupPage()));
-                      },
-                      btnNameColor: NColor.primaryColor,
-                      buttonNameSize: 22,
-                    ),
-                  )
+                 const CircleAvatar(
+                   backgroundColor: Colors.white,
+                   radius: 35,
+                   child: Icon(Icons.check,color: Color(NColor.primaryColor),),
+                 )
                 ],
               ),
             )

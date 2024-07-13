@@ -1,4 +1,3 @@
-import 'package:ecommerceapp/constant/color.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
@@ -32,8 +31,9 @@ class CustomTextField extends StatelessWidget {
             suffixIcon,
             color: siColor,
           ),
+          enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: borderColor,width: 2),
+          borderRadius: const BorderRadius.all(Radius.circular(20))),
           border: OutlineInputBorder(
-            borderSide: BorderSide(color: borderColor),
               borderRadius: BorderRadius.all(Radius.circular(borderRadius))),
           hintText: (hintText),
           labelText: (labelText),
