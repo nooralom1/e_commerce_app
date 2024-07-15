@@ -17,4 +17,9 @@ class NImage{
  static const String image12 = "asset/icon/image 22.png";
  static const String image13 = "asset/icon/image 23.png";
 
+//  ProductPage
+static const String imageP1 = "asset/images/Group 48.png";
+static const String imageP2 = "asset/images/Frame 20.png";
+static const String imageP3 = "asset/images/Frame 21.png";
+
 }

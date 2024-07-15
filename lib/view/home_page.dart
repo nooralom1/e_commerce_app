@@ -1,5 +1,6 @@
 import 'package:ecommerceapp/constant/color.dart';
 import 'package:ecommerceapp/models/data_model.dart';
+import 'package:ecommerceapp/view/product_page.dart';
 import 'package:ecommerceapp/view/profile.dart';
 import 'package:ecommerceapp/view/search.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +31,7 @@ class _HomePageState extends State<HomePage> {
                   const SizedBox(
                     height: 30,
                   ),
-                  const Row(
+                   Row(
                     children: [
                       Text(
                         "New Products",
@@ -47,23 +48,28 @@ class _HomePageState extends State<HomePage> {
                         itemBuilder: (context, index) {
                           return SizedBox(
                               width: 150,
-                              child: Card(
-                                color: const Color(0xffffe6ec),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    SizedBox(
-                                        height: 100,
-                                        width: 100,
-                                        child: Image.asset(
-                                            productItem[index].imagePath)),
-                                    Text(productItem[index].imageName),
-                                    Text(
-                                      productItem[index].imagePrize,
-                                      style: const TextStyle(
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ],
+                              child: InkWell(
+                                onTap: (){setState(() {
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ProductPage()));
+                                });},
+                                child: Card(
+                                  color: const Color(0xffffe6ec),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      SizedBox(
+                                          height: 100,
+                                          width: 100,
+                                          child: Image.asset(
+                                              productItem[index].imagePath)),
+                                      Text(productItem[index].imageName),
+                                      Text(
+                                        productItem[index].imagePrize,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ));
                         }),

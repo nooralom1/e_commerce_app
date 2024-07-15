@@ -24,4 +24,10 @@ static const String text11 = "Computer";
 static const String text12 = "Gaming";
 static const String text13 = "Printer";
 
+// ProductPage
+static const String textP1 ="Photos";
+static const String textP2 ="Colours";
+static const String textP3 ="Description";
+static const String textP4 ="Comments";
+
 }
