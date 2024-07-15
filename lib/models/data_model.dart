@@ -1,6 +1,5 @@
 import 'package:ecommerceapp/constant/image.dart';
 import 'package:ecommerceapp/constant/text.dart';
-import 'package:ecommerceapp/view/product_page.dart';
 
 
 //HomePage

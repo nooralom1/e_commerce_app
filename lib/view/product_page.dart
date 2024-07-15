@@ -28,7 +28,7 @@ class _ProductPageState extends State<ProductPage> {
                 InkWell(
                   onTap: (){
                     setState(() {
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomePage()));
                     });
                   },
                   child: Container(
@@ -85,8 +85,8 @@ class _ProductPageState extends State<ProductPage> {
                         ))
                   ],
                 ),
-                SizedBox(height: 20,),
-                TabBar(
+                const SizedBox(height: 20,),
+                const TabBar(
                   indicatorColor: Color(NColor.primaryColor),
                     isScrollable: true,
                     labelColor: Colors.black,
@@ -114,7 +114,7 @@ class _ProductPageState extends State<ProductPage> {
                     },
                   ),
                 ),
-                SizedBox(height: 40,),
+                const SizedBox(height: 40,),
                 Row(
                   children: [
                     Container(
@@ -133,7 +133,7 @@ class _ProductPageState extends State<ProductPage> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 15,),
+                    const SizedBox(width: 15,),
                     SizedBox(
                       width: 250,
                       height: 45,
