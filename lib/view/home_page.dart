@@ -1,10 +1,10 @@
 import 'package:ecommerceapp/constant/color.dart';
-import 'package:ecommerceapp/models/data_model.dart';
 import 'package:ecommerceapp/view/product_page.dart';
 import 'package:ecommerceapp/view/profile.dart';
 import 'package:ecommerceapp/view/search.dart';
 import 'package:flutter/material.dart';
 
+import '../models/all_models.dart';
 import 'my_cart.dart';
 
 class HomePage extends StatefulWidget {
@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
                   const SizedBox(
                     height: 30,
                   ),
-                   Row(
+                   const Row(
                     children: [
                       Text(
                         "New Products",
@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
                               width: 150,
                               child: InkWell(
                                 onTap: (){setState(() {
-                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ProductPage()));
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const ProductPage()));
                                 });},
                                 child: Card(
                                   color: const Color(0xffffe6ec),

@@ -2,7 +2,7 @@ import 'package:ecommerceapp/common/widgets/custom_elevated_button.dart';
 import 'package:ecommerceapp/constant/color.dart';
 import 'package:ecommerceapp/constant/image.dart';
 import 'package:ecommerceapp/constant/text.dart';
-import 'package:ecommerceapp/models/data_model.dart';
+import 'package:ecommerceapp/models/all_models.dart';
 import 'package:ecommerceapp/view/home_page.dart';
 import 'package:flutter/material.dart';
 

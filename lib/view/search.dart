@@ -1,10 +1,10 @@
 import 'package:ecommerceapp/common/widgets/custom_elevated_button.dart';
 import 'package:ecommerceapp/common/widgets/custom_textfield.dart';
+import 'package:ecommerceapp/models/all_models.dart';
 import 'package:ecommerceapp/view/profile.dart';
 import 'package:flutter/material.dart';
 
 import '../constant/color.dart';
-import '../models/data_model.dart';
 import 'home_page.dart';
 import 'my_cart.dart';
 
