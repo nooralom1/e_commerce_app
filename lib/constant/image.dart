@@ -22,4 +22,9 @@ static const String imageP1 = "asset/images/Group 48.png";
 static const String imageP2 = "asset/images/Frame 20.png";
 static const String imageP3 = "asset/images/Frame 21.png";
 
+// colours photos
+static const String cImage1 = "asset/images/image 11.png";
+static const String cImage2 = "asset/images/image 12.png";
+static const String cImage3 = "asset/images/image 13.png";
+
 }

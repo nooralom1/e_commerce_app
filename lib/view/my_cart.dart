@@ -2,9 +2,6 @@ import 'package:ecommerceapp/common/widgets/custom_elevated_button.dart';
 import 'package:ecommerceapp/constant/color.dart';
 import 'package:ecommerceapp/constant/image.dart';
 import 'package:ecommerceapp/constant/text.dart';
-import 'package:ecommerceapp/view/home_page.dart';
-import 'package:ecommerceapp/view/profile.dart';
-import 'package:ecommerceapp/view/search.dart';
 import 'package:flutter/material.dart';
 
 class MyCart extends StatefulWidget {
@@ -134,37 +131,6 @@ class _MyCartState extends State<MyCart> {
           ],
         ),
       ),
-        bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          fixedColor: const Color(NColor.primaryColor),
-          currentIndex: 2,
-          items:  [
-            BottomNavigationBarItem(
-                icon: InkWell(
-                  onTap: (){
-                    setState(() {
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomePage()));
-                    });
-                  },
-                    child: const Icon(Icons.home_outlined)), label: 'home'),
-            BottomNavigationBarItem(
-                icon: InkWell(onTap:(){
-                  setState(() {
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>const SearchPage()));
-                  });
-                },child: const Icon(Icons.search)), label: 'search'),
-            const BottomNavigationBarItem(
-                icon: Icon(Icons.shopping_bag_outlined), label: 'card'),
-            BottomNavigationBarItem(
-                icon: InkWell(
-                    onTap:(){
-                      setState(() {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const ProfilePage()));
-                      });
-                    },
-                    child: const Icon(Icons.person_outline_rounded)), label: 'Profile'),
-          ],
-        )
     );
   }
 }

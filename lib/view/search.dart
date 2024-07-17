@@ -1,12 +1,9 @@
 import 'package:ecommerceapp/common/widgets/custom_elevated_button.dart';
 import 'package:ecommerceapp/common/widgets/custom_textfield.dart';
 import 'package:ecommerceapp/models/all_models.dart';
-import 'package:ecommerceapp/view/profile.dart';
 import 'package:flutter/material.dart';
 
 import '../constant/color.dart';
-import 'home_page.dart';
-import 'my_cart.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({super.key});
@@ -86,37 +83,6 @@ class _SearchPageState extends State<SearchPage> {
             ),
           ),
         ),
-        bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          fixedColor: const Color(NColor.primaryColor),
-          currentIndex: 1,
-          items: [
-            BottomNavigationBarItem(
-                icon: InkWell(
-                    onTap: (){
-                      setState(() {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomePage()));
-                      });
-                    },
-                    child: const Icon(Icons.home_outlined)), label: 'home'),
-            const BottomNavigationBarItem(icon: Icon(Icons.search), label: 'search'),
-            BottomNavigationBarItem(
-                icon: InkWell(
-                    onTap:(){
-                      setState(() {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const MyCart()));
-                      });
-                    },
-                    child: const Icon(Icons.shopping_bag_outlined)), label: 'card'),
-            BottomNavigationBarItem(
-                icon: InkWell(
-                    onTap:(){
-                      setState(() {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const ProfilePage()));
-                      });
-                    },
-                    child: const Icon(Icons.person_outline_rounded)), label: 'Profile'),
-          ],
-        ));
+    );
   }
 }

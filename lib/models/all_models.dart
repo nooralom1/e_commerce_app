@@ -1,3 +1,4 @@
+import 'package:ecommerceapp/constant/color.dart';
 import 'package:ecommerceapp/constant/image.dart';
 import 'package:ecommerceapp/constant/text.dart';
 
@@ -53,4 +54,16 @@ List<Photos> photosPath = [
  Photos(imagePath: NImage.imageP1),
  Photos(imagePath: NImage.imageP2),
  Photos(imagePath: NImage.imageP3),
+];
+
+class Colours{
+  final String imagePath;
+  final int color;
+  final String colorName;
+  Colours({required this.imagePath, required this.color, required this.colorName, });
+}
+List<Colours> colours = [
+Colours(imagePath: NImage.cImage1, color: NColor.goldColor, colorName: NText.cText1),
+Colours(imagePath: NImage.cImage2, color: NColor.midNightColor, colorName: NText.cText2),
+Colours(imagePath: NImage.cImage3, color: NColor.grayColor, colorName: NText.cText3),
 ];

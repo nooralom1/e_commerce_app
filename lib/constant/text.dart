@@ -30,4 +30,9 @@ static const String textP2 ="Colours";
 static const String textP3 ="Description";
 static const String textP4 ="Comments";
 
+// colors
+static const String cText1 = "Gold";
+static const String cText2 = "Midnight Green";
+static const String cText3 = "Space Gray";
+
 }
