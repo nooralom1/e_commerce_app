@@ -1,9 +1,6 @@
 import 'package:ecommerceapp/common/widgets/custom_buy_now_button.dart';
-import 'package:ecommerceapp/common/widgets/custom_elevated_button.dart';
-import 'package:ecommerceapp/constant/color.dart';
 import 'package:ecommerceapp/constant/image.dart';
 import 'package:ecommerceapp/constant/text.dart';
-import 'package:ecommerceapp/models/all_models.dart';
 import 'package:ecommerceapp/view/home_page.dart';
 import 'package:ecommerceapp/view/product_details/widget/product_details_tab_bar.dart';
 import 'package:flutter/material.dart';
@@ -57,10 +54,10 @@ class _ProductPageState extends State<ProductPage> {
                   const SizedBox(
                     height: 10,
                   ),
-                  Column(
+                  const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Row(
+                      Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
@@ -77,7 +74,7 @@ class _ProductPageState extends State<ProductPage> {
                           )
                         ],
                       ),
-                      const Text(
+                      Text(
                         "The Apple series",
                         style: TextStyle(color: Color(0xffB8BBC7), fontSize: 16),
                       ),
@@ -101,13 +98,13 @@ class _ProductPageState extends State<ProductPage> {
                   const SizedBox(
                     height: 20,
                   ),
-                  ProductDetailsTabBar(),
+                  const ProductDetailsTabBar(),
                   ]
               ),
             ),
           ),
-          bottomNavigationBar: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 12),
+          bottomNavigationBar: const Padding(
+            padding: EdgeInsets.symmetric(vertical: 12),
             child: CustomBuyNowButton(),
           ),
         ),
