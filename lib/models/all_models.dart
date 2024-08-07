@@ -2,7 +2,6 @@ import 'package:ecommerceapp/constant/color.dart';
 import 'package:ecommerceapp/constant/image.dart';
 import 'package:ecommerceapp/constant/text.dart';
 
-
 //HomePage
 class NewProducts {
   final String imagePath;
@@ -18,21 +17,30 @@ class NewProducts {
 
 List<NewProducts> productItem = [
   NewProducts(
-      imagePath: NImage.image1, imageName: NText.text1, imagePrize: NText.price1),
+      imagePath: NImage.image1,
+      imageName: NText.text1,
+      imagePrize: NText.price1),
   NewProducts(
-      imagePath: NImage.image2, imageName: NText.text2, imagePrize: NText.price2),
+      imagePath: NImage.image2,
+      imageName: NText.text2,
+      imagePrize: NText.price2),
   NewProducts(
-      imagePath: NImage.image3, imageName: NText.text3, imagePrize: NText.price1),
+      imagePath: NImage.image3,
+      imageName: NText.text3,
+      imagePrize: NText.price1),
   NewProducts(
-      imagePath: NImage.image4, imageName: NText.text4, imagePrize: NText.price2),
+      imagePath: NImage.image4,
+      imageName: NText.text4,
+      imagePrize: NText.price2),
 ];
 
 //SearchPAge
-class Search{
+class Search {
   final String imagePath;
   final String imageName;
   Search({required this.imagePath, required this.imageName});
 }
+
 List<Search> searchItem = [
   Search(imagePath: NImage.image5, imageName: NText.text5),
   Search(imagePath: NImage.image6, imageName: NText.text6),
@@ -46,24 +54,39 @@ List<Search> searchItem = [
 ];
 
 // ProductPage
-class Photos{
+class Photos {
   final String imagePath;
   Photos({required this.imagePath});
 }
+
 List<Photos> photosPath = [
- Photos(imagePath: NImage.imageP1),
- Photos(imagePath: NImage.imageP2),
- Photos(imagePath: NImage.imageP3),
+  Photos(imagePath: NImage.imageP1),
+  Photos(imagePath: NImage.imageP2),
+  Photos(imagePath: NImage.imageP3),
 ];
 
-class Colours{
+class Colours {
   final String imagePath;
   final int color;
   final String colorName;
-  Colours({required this.imagePath, required this.color, required this.colorName, });
+  Colours({
+    required this.imagePath,
+    required this.color,
+    required this.colorName,
+  });
 }
+
 List<Colours> colours = [
-Colours(imagePath: NImage.cImage1, color: NColor.goldColor, colorName: NText.cText1),
-Colours(imagePath: NImage.cImage2, color: NColor.midNightColor, colorName: NText.cText2),
-Colours(imagePath: NImage.cImage3, color: NColor.grayColor, colorName: NText.cText3),
+  Colours(
+      imagePath: NImage.cImage1,
+      color: NColor.goldColor,
+      colorName: NText.cText1),
+  Colours(
+      imagePath: NImage.cImage2,
+      color: NColor.midNightColor,
+      colorName: NText.cText2),
+  Colours(
+      imagePath: NImage.cImage3,
+      color: NColor.grayColor,
+      colorName: NText.cText3),
 ];

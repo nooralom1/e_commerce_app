@@ -17,10 +17,8 @@ class CustomBuyNowButton extends StatelessWidget {
           height: 50,
           width: 50,
           decoration: BoxDecoration(
-              borderRadius:
-              const BorderRadius.all(Radius.circular(10)),
-              border: Border.all(
-                  width: 1, color: const Color(0xffB8BBC7))),
+              borderRadius: const BorderRadius.all(Radius.circular(10)),
+              border: Border.all(width: 1, color: const Color(0xffB8BBC7))),
           child: const Center(
             child: Icon(
               Icons.bookmark_border,

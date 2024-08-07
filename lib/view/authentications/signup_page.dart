@@ -24,7 +24,10 @@ class _SignupPageState extends State<SignupPage> {
             children: [
               CustomToggleSwitch(
                 onToggle: (index) {
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginPage()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const LoginPage()));
                 },
                 initialLabelIndex: 0,
               ),
@@ -76,21 +79,28 @@ class _SignupPageState extends State<SignupPage> {
                 piColor: const Color(NColor.primaryColor),
                 borderColor: const Color(NColor.primaryColor),
               ),
-              const SizedBox(height: 70,),
+              const SizedBox(
+                height: 70,
+              ),
               SizedBox(
                 width: 180,
                 child: CustomElevatedButn(
                   bgColor: NColor.primaryColor,
                   buttonName: "Create an account",
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginPage()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const LoginPage()));
                   },
                   btnNameColor: NColor.whiteColor,
                   buttonNameSize: 16,
                 ),
               ),
-              const SizedBox(height: 150,),
-               Row(
+              const SizedBox(
+                height: 150,
+              ),
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text("Already have an account? "),
@@ -103,7 +113,11 @@ class _SignupPageState extends State<SignupPage> {
                     },
                     child: const Text(
                       "Log in",
-                      style: TextStyle(color: Color(NColor.primaryColor,),fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          color: Color(
+                            NColor.primaryColor,
+                          ),
+                          fontWeight: FontWeight.bold),
                     ),
                   ),
                 ],

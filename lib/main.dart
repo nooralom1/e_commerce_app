@@ -1,7 +1,6 @@
 import 'package:ecommerceapp/view/product_details/product_page.dart';
 import 'package:flutter/material.dart';
 
-
 void main(){
   runApp(const MyApp());
 }

@@ -57,24 +57,30 @@ class _FingerPageState extends State<FingerPage> {
                     height: 20,
                   ),
                   InkWell(
-                    onTap: (){
+                    onTap: () {
                       setState(() {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomePage()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const HomePage()));
                       });
                     },
                     child: SizedBox(
-                      height: 100,
+                        height: 100,
                         width: 100,
                         child: Image.asset("asset/images/whitefinger.png")),
                   ),
                   const SizedBox(
                     height: 20,
                   ),
-                 const CircleAvatar(
-                   backgroundColor: Colors.white,
-                   radius: 35,
-                   child: Icon(Icons.check,color: Color(NColor.primaryColor),),
-                 )
+                  const CircleAvatar(
+                    backgroundColor: Colors.white,
+                    radius: 35,
+                    child: Icon(
+                      Icons.check,
+                      color: Color(NColor.primaryColor),
+                    ),
+                  )
                 ],
               ),
             )

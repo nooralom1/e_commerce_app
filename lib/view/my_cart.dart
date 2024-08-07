@@ -49,7 +49,9 @@ class _MyCartState extends State<MyCart> {
                           ),
                         ),
                       ),
-                      const SizedBox(width: 5,),
+                      const SizedBox(
+                        width: 5,
+                      ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -76,8 +78,11 @@ class _MyCartState extends State<MyCart> {
                         ],
                       ),
                       const Padding(
-                        padding: EdgeInsets.only(bottom: 50,left: 20),
-                        child: Icon(Icons.close,color: Color(NColor.primaryColor),),
+                        padding: EdgeInsets.only(bottom: 50, left: 20),
+                        child: Icon(
+                          Icons.close,
+                          color: Color(NColor.primaryColor),
+                        ),
                       )
                     ],
                   ),
@@ -93,7 +98,9 @@ class _MyCartState extends State<MyCart> {
                           ),
                         ),
                       ),
-                      const SizedBox(width: 5,),
+                      const SizedBox(
+                        width: 5,
+                      ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -120,8 +127,11 @@ class _MyCartState extends State<MyCart> {
                         ],
                       ),
                       const Padding(
-                        padding: EdgeInsets.only(bottom: 50,left: 32),
-                        child: Icon(Icons.close,color: Color(NColor.primaryColor),),
+                        padding: EdgeInsets.only(bottom: 50, left: 32),
+                        child: Icon(
+                          Icons.close,
+                          color: Color(NColor.primaryColor),
+                        ),
                       )
                     ],
                   ),
