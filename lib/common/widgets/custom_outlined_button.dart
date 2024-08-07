@@ -15,6 +15,7 @@ class CustomOutlinedButn extends StatelessWidget {
       child: const Text(
         "Log in",
         style: TextStyle(
+
             color: Colors.white,
             fontSize: 22,
             fontWeight: FontWeight.bold),

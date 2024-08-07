@@ -26,7 +26,11 @@ class _LoginPageState extends State<LoginPage> {
             children: [
               CustomToggleSwitch(
                 onToggle: (index) {
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const SignupPage()));               },
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const SignupPage()));
+                },
                 initialLabelIndex: 1,
               ),
               const SizedBox(
@@ -74,7 +78,10 @@ class _LoginPageState extends State<LoginPage> {
                   bgColor: NColor.primaryColor,
                   buttonName: "Log in",
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomePage()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HomePage()));
                   },
                   btnNameColor: NColor.whiteColor,
                   buttonNameSize: 18,
@@ -87,7 +94,9 @@ class _LoginPageState extends State<LoginPage> {
                 "Or",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
-              const SizedBox(height: 10,),
+              const SizedBox(
+                height: 10,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -95,11 +104,16 @@ class _LoginPageState extends State<LoginPage> {
                     radius: 30,
                     child: Image.asset("asset/images/google.png"),
                   ),
-                  const SizedBox(width: 5,),
+                  const SizedBox(
+                    width: 5,
+                  ),
                   InkWell(
-                    onTap: (){
+                    onTap: () {
                       setState(() {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const FingerPage()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const FingerPage()));
                       });
                     },
                     child: CircleAvatar(
@@ -109,15 +123,20 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ],
               ),
-              const SizedBox(height: 80,),
-               Row(
+              const SizedBox(
+                height: 80,
+              ),
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text("Don't have an account? "),
                   InkWell(
-                    onTap: (){
+                    onTap: () {
                       setState(() {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const SignupPage()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const SignupPage()));
                       });
                     },
                     child: const Text(
