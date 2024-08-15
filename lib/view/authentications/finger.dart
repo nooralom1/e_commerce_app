@@ -1,5 +1,4 @@
 import 'package:ecommerceapp/bottom_navigation.dart';
-import 'package:ecommerceapp/view/home_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../constant/color.dart';
