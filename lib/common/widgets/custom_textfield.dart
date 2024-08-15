@@ -20,24 +20,31 @@ class CustomTextField extends StatelessWidget {
     required this.borderRadius,
     this.bgColor,
     this.suffixIcon,
-    this.siColor, required this.prefixIcon, required this.piColor, required this.borderColor,
+    this.siColor,
+    required this.prefixIcon,
+    required this.piColor,
+    required this.borderColor,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-          suffixIcon: Icon(
-            suffixIcon,
-            color: siColor,
-          ),
-          enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: borderColor,width: 2),
-          borderRadius: const BorderRadius.all(Radius.circular(20))),
-          border: OutlineInputBorder(
-              borderRadius: BorderRadius.all(Radius.circular(borderRadius))),
-          hintText: (hintText),
-          labelText: (labelText),
-        prefixIcon: Icon(prefixIcon,color: piColor,),
+        suffixIcon: Icon(
+          suffixIcon,
+          color: siColor,
+        ),
+        enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: borderColor, width: 2),
+            borderRadius: const BorderRadius.all(Radius.circular(20))),
+        border: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(borderRadius))),
+        hintText: (hintText),
+        labelText: (labelText),
+        prefixIcon: Icon(
+          prefixIcon,
+          color: piColor,
+        ),
       ),
     );
   }

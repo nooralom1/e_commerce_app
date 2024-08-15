@@ -3,7 +3,6 @@ import 'package:ecommerceapp/constant/text.dart';
 import 'package:ecommerceapp/models/all_models.dart';
 import 'package:flutter/material.dart';
 
-
 class ProductDetailsTabBar extends StatelessWidget {
   const ProductDetailsTabBar({
     super.key,
@@ -68,33 +67,30 @@ class ProductDetailsTabBar extends StatelessWidget {
                       width: 140,
                       child: Card(
                           child: Column(
-                            mainAxisAlignment:
-                            MainAxisAlignment.spaceAround,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Image.asset(
+                            colours[index].imagePath,
+                            fit: BoxFit.cover,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Image.asset(
-                                colours[index].imagePath,
-                                fit: BoxFit.cover,
+                              CircleAvatar(
+                                radius: 6,
+                                backgroundColor: Color(colours[index].color),
                               ),
-                              Row(
-                                mainAxisAlignment:
-                                MainAxisAlignment.center,
-                                children: [
-                                  CircleAvatar(
-                                    radius: 6,
-                                    backgroundColor:
-                                    Color(colours[index].color),
-                                  ),
-                                  const SizedBox(
-                                    width: 5,
-                                  ),
-                                  Text(
-                                    colours[index].colorName,
-                                    style: const TextStyle(fontSize: 12),
-                                  )
-                                ],
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              Text(
+                                colours[index].colorName,
+                                style: const TextStyle(fontSize: 12),
                               )
                             ],
-                          )),
+                          )
+                        ],
+                      )),
                     );
                   },
                 ),
@@ -216,29 +212,24 @@ class ProductDetailsTabBar extends StatelessWidget {
                             width: 290,
                             child: Card(
                               child: Padding(
-                                padding:
-                                const EdgeInsets.only(left: 10),
+                                padding: const EdgeInsets.only(left: 10),
                                 child: Column(
                                   children: [
                                     Row(
                                       mainAxisAlignment:
-                                      MainAxisAlignment
-                                          .spaceBetween,
+                                          MainAxisAlignment.spaceBetween,
                                       children: [
                                         const Text(
                                           "@hebaqaisar46",
                                           style: TextStyle(
-                                              color:
-                                              Color(0xffB8BBC7)),
+                                              color: Color(0xffB8BBC7)),
                                         ),
-                                        Image.asset(
-                                            "asset/icon/Group 28.png")
+                                        Image.asset("asset/icon/Group 28.png")
                                       ],
                                     ),
                                     const Text(
                                       "This phone seems like its brand new. Can't tell if any flaws exist with the refurbished state of it. It seems good to go.",
-                                      style:
-                                      TextStyle(fontSize: 12.5),
+                                      style: TextStyle(fontSize: 12.5),
                                     )
                                   ],
                                 ),
@@ -262,20 +253,17 @@ class ProductDetailsTabBar extends StatelessWidget {
                             width: 290,
                             child: Card(
                               child: Padding(
-                                padding:
-                                const EdgeInsets.only(left: 10),
+                                padding: const EdgeInsets.only(left: 10),
                                 child: Column(
                                   children: [
                                     Row(
                                       mainAxisAlignment:
-                                      MainAxisAlignment
-                                          .spaceBetween,
+                                          MainAxisAlignment.spaceBetween,
                                       children: [
                                         const Text(
                                           "@Abdullahqaisar82",
                                           style: TextStyle(
-                                              color:
-                                              Color(0xffB8BBC7)),
+                                              color: Color(0xffB8BBC7)),
                                         ),
                                         Image.asset(
                                             "asset/icon/Group 28(1).png")
@@ -283,8 +271,7 @@ class ProductDetailsTabBar extends StatelessWidget {
                                     ),
                                     const Text(
                                       "I needed an upgrade from my 8 plus and this was a good choice. Price was good and it looked new upon arrival. The battery lasts all day as long as I don't play a lot of games on it.",
-                                      style:
-                                      TextStyle(fontSize: 12.5),
+                                      style: TextStyle(fontSize: 12.5),
                                     )
                                   ],
                                 ),

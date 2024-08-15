@@ -2,7 +2,6 @@ import 'package:ecommerceapp/constant/color.dart';
 import 'package:ecommerceapp/view/authentications/login.dart';
 import 'package:ecommerceapp/view/authentications/signup_page.dart';
 import 'package:flutter/material.dart';
-
 import '../../common/widgets/custom_elevated_button.dart';
 import '../../common/widgets/custom_outlined_button.dart';
 
@@ -37,7 +36,7 @@ class _EntroPageState extends State<EntroPage> {
               ],
             ),
             Container(
-              height: 425,
+              height: 508,
               width: double.infinity,
               decoration: const BoxDecoration(
                   color: Color(NColor.primaryColor),
@@ -64,7 +63,10 @@ class _EntroPageState extends State<EntroPage> {
                     height: 50,
                     child: CustomOutlinedButn(
                       onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginPage()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const LoginPage()));
                       },
                     ),
                   ),
@@ -78,7 +80,10 @@ class _EntroPageState extends State<EntroPage> {
                       bgColor: NColor.whiteColor,
                       buttonName: 'Sign up',
                       onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const SignupPage()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const SignupPage()));
                       },
                       btnNameColor: NColor.primaryColor,
                       buttonNameSize: 22,

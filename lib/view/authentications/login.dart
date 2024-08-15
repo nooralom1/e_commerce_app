@@ -1,6 +1,6 @@
+import 'package:ecommerceapp/bottom_navigation.dart';
 import 'package:ecommerceapp/view/authentications/finger.dart';
 import 'package:ecommerceapp/view/authentications/signup_page.dart';
-import 'package:ecommerceapp/view/home_page.dart';
 import 'package:flutter/material.dart';
 import '../../common/widgets/custom_elevated_button.dart';
 import '../../common/widgets/custom_textfield.dart';
@@ -81,7 +81,7 @@ class _LoginPageState extends State<LoginPage> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const HomePage()));
+                            builder: (context) => const BottomNavigation()));
                   },
                   btnNameColor: NColor.whiteColor,
                   buttonNameSize: 18,

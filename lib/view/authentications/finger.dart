@@ -1,3 +1,4 @@
+import 'package:ecommerceapp/bottom_navigation.dart';
 import 'package:ecommerceapp/view/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -34,7 +35,7 @@ class _FingerPageState extends State<FingerPage> {
               ],
             ),
             Container(
-              height: 425,
+              height: 508,
               width: double.infinity,
               decoration: const BoxDecoration(
                   color: Color(NColor.primaryColor),
@@ -62,7 +63,7 @@ class _FingerPageState extends State<FingerPage> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const HomePage()));
+                                builder: (context) => const BottomNavigation()));
                       });
                     },
                     child: SizedBox(
