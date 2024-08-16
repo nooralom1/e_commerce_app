@@ -1,7 +1,7 @@
-import 'package:ecommerceapp/view/home_page.dart';
-import 'package:ecommerceapp/view/my_cart.dart';
-import 'package:ecommerceapp/view/profile.dart';
-import 'package:ecommerceapp/view/search.dart';
+import 'package:ecommerceapp/view/screens/home/home_page.dart';
+import 'package:ecommerceapp/view/screens/my_cart/my_cart.dart';
+import 'package:ecommerceapp/view/screens/profile/profile.dart';
+import 'package:ecommerceapp/view/screens/search/search.dart';
 import 'package:flutter/material.dart';
 
 import 'constant/color.dart';

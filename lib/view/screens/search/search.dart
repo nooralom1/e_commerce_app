@@ -2,7 +2,7 @@ import 'package:ecommerceapp/common/widgets/custom_elevated_button.dart';
 import 'package:ecommerceapp/common/widgets/custom_textfield.dart';
 import 'package:ecommerceapp/models/all_models.dart';
 import 'package:flutter/material.dart';
-import '../constant/color.dart';
+import '../../../constant/color.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({super.key});

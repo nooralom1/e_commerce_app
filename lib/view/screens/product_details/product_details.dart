@@ -1,8 +1,8 @@
+import 'package:ecommerceapp/bottom_navigation.dart';
 import 'package:ecommerceapp/common/widgets/custom_buy_now_button.dart';
 import 'package:ecommerceapp/constant/image.dart';
 import 'package:ecommerceapp/constant/text.dart';
-import 'package:ecommerceapp/view/home_page.dart';
-import 'package:ecommerceapp/view/product_details/widget/product_details_tab_bar.dart';
+import 'package:ecommerceapp/view/screens/product_details/widget/product_details_tab_bar.dart';
 import 'package:flutter/material.dart';
 
 class ProductPage extends StatefulWidget {
@@ -31,7 +31,7 @@ class _ProductPageState extends State<ProductPage> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const HomePage()));
+                                  builder: (context) => const BottomNavigation()));
                         });
                       },
                       child: Container(
