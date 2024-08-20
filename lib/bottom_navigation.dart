@@ -3,7 +3,6 @@ import 'package:ecommerceapp/view/screens/my_cart/my_cart.dart';
 import 'package:ecommerceapp/view/screens/profile/profile.dart';
 import 'package:ecommerceapp/view/screens/search/search.dart';
 import 'package:flutter/material.dart';
-
 import 'constant/color.dart';
 
 class BottomNavigation extends StatefulWidget {
