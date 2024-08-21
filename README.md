@@ -1,16 +1,11 @@
-# ecommerceapp
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_20240821_021327](https://github.com/user-attachments/assets/e25ea17d-273f-42e4-9d29-2ba1d4c861b3)
+![Screenshot_20240821_021333](https://github.com/user-attachments/assets/8885c1a8-d1f6-48d2-a389-48a39feae7ea)
+![Screenshot_20240821_021337](https://github.com/user-attachments/assets/9b0f02bc-70a6-48ac-8031-fc3c9eed2c7b)
+![Screenshot_20240821_021343](https://github.com/user-attachments/assets/a1912d0d-773a-46be-b018-0abcb9a0ce7e)
+![Screenshot_20240821_021355](https://github.com/user-attachments/assets/c8e288de-40b7-4fef-a61f-1c046c11956a)
+![Screenshot_20240821_021400](https://github.com/user-attachments/assets/45a13c3f-8f83-496b-b058-1df68b902dcc)
+![Screenshot_20240821_021407](https://github.com/user-attachments/assets/41aa4c37-0f9e-46a9-8d42-cf140af2da1c)
+![Screenshot_20240821_021409](https://github.com/user-attachments/assets/e4ef404f-a28e-4a89-95ac-76d5dd96d3a2)
+![Screenshot_20240821_021415](https://github.com/user-attachments/assets/2b5796c1-b4f4-49d8-8a50-e82cdcc31cb8)
+![Screenshot_20240821_021420](https://github.com/user-attachments/assets/ac1e28ca-094e-4981-996e-ece4b2a135a8)
+![Screenshot_20240821_021424](https://github.com/user-attachments/assets/6e86b4aa-b291-4141-872f-c4644dc8c892)
