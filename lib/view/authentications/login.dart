@@ -1,10 +1,10 @@
 import 'package:ecommerceapp/bottom_navigation.dart';
+import 'package:ecommerceapp/common/widgets/custom_toggle_switch.dart';
 import 'package:ecommerceapp/view/authentications/finger.dart';
 import 'package:ecommerceapp/view/authentications/signup_page.dart';
 import 'package:flutter/material.dart';
 import '../../common/widgets/custom_elevated_button.dart';
 import '../../common/widgets/custom_textfield.dart';
-import '../../common/widgets/custom_toggle_switch.dart';
 import '../../constant/color.dart';
 
 class LoginPage extends StatefulWidget {
