@@ -1,9 +1,6 @@
-
-
+import 'package:ecommerceapp/models/all_models.dart';
 import 'package:ecommerceapp/view/screens/product_details/product_details.dart';
 import 'package:flutter/material.dart';
-
-import '../../../models/all_models.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
