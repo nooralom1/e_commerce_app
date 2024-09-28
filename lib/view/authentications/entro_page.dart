@@ -1,9 +1,9 @@
+import 'package:ecommerceapp/common/widgets/custom_elevated_button.dart';
+import 'package:ecommerceapp/common/widgets/custom_outlined_button.dart';
 import 'package:ecommerceapp/constant/color.dart';
 import 'package:ecommerceapp/view/authentications/login.dart';
 import 'package:ecommerceapp/view/authentications/signup_page.dart';
 import 'package:flutter/material.dart';
-import '../../common/widgets/custom_elevated_button.dart';
-import '../../common/widgets/custom_outlined_button.dart';
 
 class EntroPage extends StatefulWidget {
   const EntroPage({super.key});
