@@ -1,3 +1,4 @@
+
 import 'package:ecommerceapp/bottom_navigation.dart';
 import 'package:ecommerceapp/common/widgets/custom_buy_now_button.dart';
 import 'package:ecommerceapp/constant/image.dart';
