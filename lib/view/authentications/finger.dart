@@ -1,7 +1,6 @@
 import 'package:ecommerceapp/bottom_navigation.dart';
+import 'package:ecommerceapp/constant/color.dart';
 import 'package:flutter/material.dart';
-
-import '../../constant/color.dart';
 
 class FingerPage extends StatefulWidget {
   const FingerPage({super.key});
